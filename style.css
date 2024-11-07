@@ -1,0 +1,153 @@
+/* Hero Section id */
+#hero-section {
+  position: relative;
+  height: 60vh; /* Adjust height as needed */
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send the video behind the overlay and text */
+  transition: 0.1ms ease;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.font-size-5rem {
+  font-size: 5rem;
+}
+
+.font-size-4rem {
+  font-size: 4rem;
+}
+
+.font-size-3rem {
+  font-size: 3rem;
+  margin-left: 450px;
+}
+.font-size-2rem {
+  font-size: 2rem;
+}
+
+.font-size-1rem {
+  font-size: 1.5rem;
+}
+
+.text-shadow {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.15),
+    0px 6px 8px rgba(200, 170, 255, 0.25);
+}
+
+.font-weight-thin {
+  font-weight: 100;
+}
+
+nav a {
+  text-decoration: none; /* removes nav lines */
+  margin: 0 15px; /* space between nav words */
+  transition: all 0.25s ease-in-out;
+  color: white;
+}
+
+nav a:hover {
+  color: #c8aaff;
+  -webkit-text-stroke: #c8aaff;
+  font-size: 1.5rem;
+}
+
+
+/*proximity of h1 words*/
+.line-height {
+  line-height: 0.85;
+}
+
+.line-height-header {
+  line-height: 0.95;
+}
+.margin-top-30 {
+  margin-top: -30px;
+}
+
+.black-line {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-bottom: black solid 2px;
+}
+
+.text-spacing {
+  letter-spacing: 2px; /* Adjust this value as needed */
+}
+/* to adjust spacing between letters of 2nd page header*/
+.negative-text-spacing {
+  letter-spacing: 1px;
+}
+
+.margin-left-200 {
+  margin-left: 200px;
+}
+
+.margin-left-450 {
+  margin-left: 400px;
+}
+
+.margin-top {
+  margin-top: 0;
+}
+
+.margin {
+  margin: 200px;
+}
+
+.max-width-500 {
+  max-width: 500px;
+}
+
+
+.doodles-icon {
+  position: absolute;
+  top: 70svh;
+  left: 150px;
+  height: 300px;
+}
+
+
+.m-small {
+  margin-left: 8rem;
+}
+
+.ml-150 { 
+  margin-left: 150px;
+}
+
+.ml-50 {
+  margin-left: 100px;
+}
+
+.text-light {
+  font-weight: 300;
+  
+}
