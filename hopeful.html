@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="melancholic.html" />
+    <link rel="stylesheet" href="hopeful.html" />
+    <link rel="stylesheet" href="inspired.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="hero-section">
+      <video autoplay muted loop class="background-video">
+        <source src="Assets/video/hopeful.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="p-0 m-0 flex flex-column center">
+        <h1
+          class="pinyon-script-font red-color text-xl text-shadow text-thin line-height floating"
+        >
+          Today <br />I'm <br />Feeling
+        </h1>
+        <h2
+          class="text-lg flex center flex-column white-color cormorant-garamond-light-italic mt-3 font-weight-thin text-shadow"
+        >
+          Hopeful
+        </h2>
+      </div>
+      <nav
+        class="flex libre-baskerville-regular tracking-ease text-shadow center"
+      >
+        <a href="index.html">SERENE</a>
+        <a href="melancholic.html">MELANCHOLIC</a>
+        <a href="hopeful.html">HOPEFUL</a>
+        <a href="inspired.html">INSPIRED</a>
+      </nav>
+
+      <img
+        src="Assets/svg/rosie.svg"
+        class="flex center doodles violet"
+        alt="Violet"
+      />
+      <img
+        src="Assets/svg/Roses.svg"
+        class="flex center doodles rose"
+        alt="Rose"
+      />
+    </header>
+
+    <main>
+      <div class="black-line"></div>
+      <div class="header-text flex w-svw gap-around ml-10 flex">
+        <section>
+          <div>
+            <p
+              class="main-title text-lg p-0 cormorant-garamond-bold line-height-header"
+            >
+              PIECES<br />OF
+              <span
+                class="pinyon-script-font red-color m-small text-thin tracking-ease"
+                >promised</span
+              ><br />LIGHT<br />
+            </p>
+            <div class="flex">
+              <span class="text-xl mt-1">D</span>
+              <p
+                class="cormorant-garamond-light text-lg p-0 cormorant-garamond-bold text-base padding-400 mw"
+              >
+                aydream is a gentle melody, like words left behind to soothe and
+                lift your spirits. Each note is a quiet reminder of warmth and
+                hope, inviting you to pause and feel the small joys waiting to
+                be shared. It’s a song that fills the air with a soft glow,
+                easing the heart and leaving you a little lighter.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="card mt-hero mt-5 gap-card">
+            <img
+              src="/Assets/video/daydreams.png"
+              alt="Album Art"
+              class="card-image"
+            />
+            <div class="black-line m-0 m-blackline"></div>
+            <div class="card-content">
+              <h2
+                class="song-title pinyon-script-font text-sm text-thin m-0 mt-base"
+              >
+                Daydream
+              </h2>
+              <p class="artist-name cormorant-garamond-bold text-base m-0">
+                massobeats
+              </p>
+              <!-- SVG Play Button -->
+              <img
+                src="Assets/svg/playbutton.svg"
+                alt="Play Button"
+                class="play-icon mt-base"
+                id="playButton"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p class="cormorant-garamond-bold m-0 p-0 flex ml-10">
+        Background Attribution: JongWoong Park <br />Song Attribution: Daydream
+        - massobeats
+      </p>
+    </footer>
+    <audio id="myAudio" src="Assets/music/daydream.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 /* Hero Section id */
 #hero-section {
   position: relative;
-  height: 60vh; /* Adjust height as needed */
+  height: 60vh;
 }
 
 /* Background Video */
@@ -10,23 +10,23 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Send the video behind the overlay and text */
+  z-index: -1;
   transition: 0.1ms ease;
 }
 
-.padding-0 {
+.p-0 {
   padding: 0;
 }
 
-.margin-0 {
+.m-0 {
   margin: 0;
 }
 
-.display-flex {
+.flex {
   display: flex;
 }
 
-.align-center {
+.center {
   justify-content: center;
   align-items: center;
 }
@@ -34,24 +34,23 @@
 .flex-column {
   flex-direction: column;
 }
-
-.font-size-5rem {
+/*TEXT SIZES*/
+.text-xl {
   font-size: 5rem;
 }
 
-.font-size-4rem {
+.text-lg {
   font-size: 4rem;
 }
 
-.font-size-3rem {
+.text-m {
   font-size: 3rem;
-  margin-left: 450px;
 }
-.font-size-2rem {
+.text-sm {
   font-size: 2rem;
 }
 
-.font-size-1rem {
+.text-base {
   font-size: 1.5rem;
 }
 
@@ -60,23 +59,26 @@
     0px 6px 8px rgba(200, 170, 255, 0.25);
 }
 
-.font-weight-thin {
+.text-thin {
   font-weight: 100;
 }
 
+.text-light {
+  font-weight: 300;
+}
+/*NAVIGATION*/
 nav a {
-  text-decoration: none; /* removes nav lines */
-  margin: 0 15px; /* space between nav words */
+  text-decoration: none;
+  margin: 0 15px;
   transition: all 0.25s ease-in-out;
   color: white;
 }
 
 nav a:hover {
-  color: #c8aaff;
-  -webkit-text-stroke: #c8aaff;
+  color: #f6f6f6;
+  -webkit-text-stroke: #fdfdfd;
   font-size: 1.5rem;
 }
-
 
 /*proximity of h1 words*/
 .line-height {
@@ -86,9 +88,6 @@ nav a:hover {
 .line-height-header {
   line-height: 0.95;
 }
-.margin-top-30 {
-  margin-top: -30px;
-}
 
 .black-line {
   margin-top: 20px;
@@ -97,57 +96,140 @@ nav a:hover {
   width: 80%;
   border-bottom: black solid 2px;
 }
+/* TEXT SPACING*/
 
-.text-spacing {
-  letter-spacing: 2px; /* Adjust this value as needed */
-}
-/* to adjust spacing between letters of 2nd page header*/
-.negative-text-spacing {
-  letter-spacing: 1px;
+.tracking-ease {
+  letter-spacing: -0.01em;
 }
 
-.margin-left-200 {
-  margin-left: 200px;
+.tracking-tighter {
+  letter-spacing: -0.08em;
+}
+/* MARGINS*/
+
+.mt-3 {
+  margin-top: -3rem;
+}
+.mt-1 {
+  margin-top: -1rem;
+}
+.ml-10 {
+  margin-left: 10rem;
 }
 
-.margin-left-450 {
-  margin-left: 400px;
+.mw {
+  max-width: 35rem;
 }
-
-.margin-top {
-  margin-top: 0;
-}
-
-.margin {
-  margin: 200px;
-}
-
-.max-width-500 {
-  max-width: 500px;
-}
-
-
-.doodles-icon {
+/*end margins*/
+.doodles {
   position: absolute;
-  top: 70svh;
-  left: 150px;
-  height: 300px;
 }
 
-
-.m-small {
-  margin-left: 8rem;
+.rose {
+  top: 65rem;
+  left: 83rem;
 }
 
-.ml-150 { 
-  margin-left: 150px;
+.violet {
+  top: 32rem;
 }
 
-.ml-50 {
-  margin-left: 100px;
+/*card styling*/
+.card {
+  width: 275px;
+  height: 375px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+/* Image styling */
+.card-image {
+  width: 70%;
+  height: auto;
 }
 
-.text-light {
-  font-weight: 300;
-  
+.play-icon {
+  width: 50px; /* Reduced width */
+  height: 50px; /* Reduced height */
+}
+
+.box {
+  box-sizing: border-box;
+}
+
+/*animation*/
+
+/*FLOATING*/
+
+.floating {
+  animation: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/*keyframes floating*/
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#myAudio {
+  display: none;
+}
+
+#playButton {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+#playButton:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.w-svw {
+  width: 100svw;
+}
+
+.gap-around {
+  gap: 100px;
+}
+
+.gap-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* IPAD SIZE */
+@media screen and (max-width: 600px) {
+  .font-medium {
+    font-size: 3rem;
+  }
+}
+
+/* PHONE SIZE */
+@media screen and (max-width: 410px) {
+  .font-medium {
+    font-size: 2rem;
+  }
 }

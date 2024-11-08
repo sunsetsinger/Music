@@ -7,79 +7,129 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="colors.css" />
     <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="melancholic.html" />
+    <link rel="stylesheet" href="hopeful.html" />
+    <link rel="stylesheet" href="inspired.html" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header id="hero-section">
       <video autoplay muted loop class="background-video">
-        <source src="serene.mp4" type="video/mp4" />
+        <source src="Assets/video/serene.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div class="padding-0 margin-0 display-flex flex-column align-center">
+      <div class="p-0 m-0 flex flex-column center">
         <h1
-          class="pinyon-script-font violet-color font-size-5rem text-shadow font-weight-thin line-height"
+          class="pinyon-script-font violet-color text-xl text-shadow text-thin line-height floating"
         >
-          Today <br />
-          I'm <br />
-          Feeling
+          Today <br />I'm <br />Feeling
         </h1>
         <h2
-          class="font-size-4rem display-flex align-center flex-column white-color cormorant-garamond-light-italic  margin-top-30 font-weight-thin text-shadow"
+          class="text-lg flex center flex-column white-color cormorant-garamond-light-italic mt-3 font-weight-thin text-shadow"
         >
           Serene
         </h2>
       </div>
       <nav
-        class="display-flex libre-baskerville-regular text-spacing text-shadow align-center"
+        class="flex libre-baskerville-regular tracking-ease text-shadow center"
       >
-        <a href="serene">SERENE</a>
-        <a href="melancholic">MELANCHOLIC</a>
-        <a href="hopeful">HOPEFUL</a>
-        <a href="inspired">INSPIRED</a>
+        <a href="index.html">SERENE</a>
+        <a href="melancholic.html">MELANCHOLIC</a>
+        <a href="hopeful.html">HOPEFUL</a>
+        <a href="inspired.html">INSPIRED</a>
       </nav>
+
+      <img
+        src="Assets/svg/Violets.svg"
+        class="flex center doodles violet"
+        alt="Violet"
+      />
+      <img
+        src="Assets/svg/Roses.svg"
+        class="flex center doodles rose"
+        alt="Rose"
+      />
     </header>
 
-    <div class="black-line"></div>
+    <main>
+      <div class="black-line"></div>
+      <div class="header-text flex w-svw gap-around ml-10 flex">
+        <section>
+          <div>
+            <p
+              class="main-title text-lg p-0 cormorant-garamond-bold line-height-header"
+            >
+              A MELODY<br />TO
+              <span
+                class="pinyon-script-font violet-color m-small text-thin tracking-ease ml-ease"
+                >ease</span
+              ><br />YOUR<br />MIND
+            </p>
+            <div class="flex">
+              <span class="text-xl mt-1">L</span>
+              <p
+                class="cormorant-garamond-light text-lg p-0 cormorant-garamond-bold text-base padding-400 mw"
+              >
+                avender feels like a friend who just knows—someone who sits
+                beside you after a long day without needing to say anything. Its
+                gentle melody wraps around you, offering a quiet reminder to
+                breathe, to let go of what doesn’t matter, and just be. There’s
+                something about this song that speaks directly to the heart,
+                calming the noise and bringing a sense of peace. It’s like
+                stepping into a familiar space where you can finally relax, a
+                moment of stillness shared between you and the music.
+              </p>
+            </div>
+          </div>
+        </section>
 
-    <object
-      type="image/svg+xml"
-      data="doodles-serene.svg"
-      class="doodles-icon"
-    ></object>
-
-    <div class="header-section ml-150">
-      <div class="header-text ">
-        <p
-          class="main-title font-size-4rem padding-0  cormorant-garamond-bold negative-text-spacing line-height-header ml-50"
-        >
-          A MELODY<br />TO <span class="pinyon-script-font violet-color m-small font-weight-thin"> ease </span>
-          
-          <br />YOUR<br />MIND
-        </p>
-        <div class="display-flex"> 
-          <span class="font-size-5rem">J</span>
-          <p
-          class="cormorant-garamond-light ont-size-4rem padding-0 cormorant-garamond-bold negative-text-spacing line-height-header font-size-1rem padding-400 max-width-500"
-          >
-          's lullaby feels like a warm embrace after a long day. Its gentle
-          melody and soft lyrics are like a quiet reminder to breathe and let
-          go, bringing a sense of calm to even the busiest minds. It's the kind
-          of song that feels like a friend beside you.
-        </div>
-        </p>
+        <section>
+          <div class="card mt-hero mt-5 gap-card">
+            <img
+              src="/Assets/video/lavender.png"
+              alt="Album Art"
+              class="card-image"
+            />
+            <div class="black-line m-0 m-blackline"></div>
+            <div class="card-content">
+              <h2
+                class="song-title pinyon-script-font text-sm text-thin m-0 mt-base"
+              >
+                Lavender
+              </h2>
+              <p class="artist-name cormorant-garamond-bold text-base m-0">
+                massobeats
+              </p>
+              <!-- SVG Play Button -->
+              <img
+                src="Assets/svg/playbutton.svg"
+                alt="Play Button"
+                class="play-icon mt-base"
+                id="playButton"
+              />
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
+
+    <footer>
+      <p class="cormorant-garamond-bold m-0 p-0 flex ml-10">
+        Background Attribution: JongWoong Park <br />Song Attribution: Lavender
+        - massobeats
+      </p>
+    </footer>
+    <audio id="myAudio" src="Assets/music/lavender.mp3"></audio>
+    <script src="script.js"></script>
   </body>
 </html>
