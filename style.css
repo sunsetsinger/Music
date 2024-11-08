@@ -1,4 +1,8 @@
 /* Hero Section id */
+/* * {
+  overflow-x: hidden;
+} */
+
 #hero-section {
   position: relative;
   height: 60vh;
@@ -127,7 +131,7 @@ nav a:hover {
 
 .rose {
   top: 65rem;
-  left: 83rem;
+  right: 0rem;
 }
 
 .violet {
@@ -206,11 +210,14 @@ nav a:hover {
 }
 
 .w-svw {
-  width: 100svw;
+  width: 75svw;
 }
 
+
+
+
 .gap-around {
-  gap: 100px;
+  gap: 20svw;
 }
 
 .gap-card {
